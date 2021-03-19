@@ -17,8 +17,8 @@ def newget():
 		postUrl = 'https://dashboard.cpolar.com/login'
 		url = 'https://dashboard.cpolar.com/status'
 		postData = {
-		        "login": "2931267601@qq.com",
-		        "password": "20070223cmx",
+		        "login": "your_email",
+		        "password": "password",
 		      }
 		responseRes = MySession.post(postUrl, data = postData, headers = header)
 		print(f"statusCode = {responseRes.status_code}")

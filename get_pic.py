@@ -16,7 +16,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 def upload(title,categories_data,keywords,data):
 	try:
-		te = Typecho('https://anshub.top/index.php/action/xmlrpc', username='admin', password='434d58')
+		te = Typecho('https://anshub.top/index.php/action/xmlrpc', username='user', password='password')
 		# post = Post(title=title, categories = ['Test'],description=data)
 		post = Post(title=title, categories = [categories_data],mt_keywords = keywords,description=data)
 		te.new_post(post, publish=True) 
